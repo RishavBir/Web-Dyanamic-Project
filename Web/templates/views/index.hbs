@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+ {{>navbar}}
+
+<div className = "container-fluid mt-5">
+    <div class ="row">
+        <div class = "col-md-10 col-12 mx-auto">
+            <div class ="row">
+                <div class ="col-md-6 col-12 hero-text order-md-0 order-1">
+                    <br>
+                    <h1>HERE WE ARE TO</h1>
+                    <h1> HELP YOU TO GROW YOUR BUSINESS</h1>
+                    <p>We are the team of <span class="bold-style"> Professional Developers and Marketing Researchers</span>
+                    <span id ="redMore"></span>
+                    <span id="more">Our company enhance the mobility of your business to the next level with the assurance of 80 percent more profit.</span></p>
+                    <button onclick="myFunction()" id="myBtn">Read More</button>
+                </div>
+                <div class ="col-md-6 col-12 hero-text order-md-1 order-0">
+                    <figure>
+                        <img src ="images/about.svg" alt ="hero_images">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function myFunction() {
+  var redMore = document.getElementById("redMore");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (redMore.style.display === "none") {
+    redMore.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    redMore.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script src="../jq/jquery.js"  type = "text/javascript"></script>
+<script src="../js/bootstrap.js"  type = "text/javascript"></script>
+
+
+</body>
+</html>
