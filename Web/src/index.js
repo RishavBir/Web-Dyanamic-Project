@@ -63,6 +63,10 @@ app.get("/contact", (req, res) => {
 app.get("/photos", (req, res) => {
     res.render("photos")
 })
+//routing for courses
+app.get("/course",(req,res)=>{
+res.render("course")
+})
 //routing for about
 app.get("/about", (req, res) => {
     res.render("about")
@@ -80,7 +84,7 @@ try{
     res.status(201).render("index")
 }
 catch(err){
-    res.status(500).send({status:false,msg:"not posted"})
+    res.status(500).send(err)
 }
 })
 

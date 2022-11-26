@@ -36,3 +36,7 @@ const contactSchema = new mongoose.Schema({
 
 
 module.exports = mongoose.model("Contact",contactSchema)
+
+
+
+
